@@ -43,7 +43,7 @@ class MatrixTest {
     }
 
     @ParameterizedTest
-    @CsvSource({"1,5,5", "2,10,20", "3,9384,12384"})
+    @CsvSource({"1,5,4", "2,10,20", "3,9384,12384"})
     void found_OK(int num, int width, int height) {
         Matrix m = new Matrix(width, height);
         m.Fill(num);
